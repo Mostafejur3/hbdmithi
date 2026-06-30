@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Happy Birthday, beautiful girl</title>
+    <title>Happy Birthday, Beautiful girl</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -839,12 +839,12 @@
             }
 
             .wish-message-box {
-                padding: 1rem 0.8rem;
+                padding: 1.2rem 0.8rem;
                 border-radius: 24px;
             }
 
             .wish-message-box p {
-                font-size: 0.85rem;
+                font-size: 1.2rem;
                 line-height: 1.6;
             }
 
@@ -883,7 +883,7 @@
             }
 
             .extra-wish-text {
-                font-size: 0.85rem;
+                font-size: 1.2rem;
                 padding: 0.5rem 0.8rem;
                 border-radius: 40px;
             }
@@ -947,7 +947,7 @@
             }
 
             .wish-message-box p {
-                font-size: 0.78rem;
+                font-size: 1.2rem;
             }
 
             .btn-wish-option {
@@ -1091,10 +1091,8 @@
         <div class="card-inner">
             <!-- title -->
             <div class="main-title">
-                <span>Happy</span>
-                <span>Birthday,</span>
-                <span>beautiful</span>
-                <span>girl</span>
+                <span>Happy Birthday <br> Beautiful girl</span>
+                
             </div>
 
             <!-- crush name -->
@@ -1146,6 +1144,20 @@
                 <span class="floating-star">✦</span>
             </div>
 
+                <!-- ===== NEW FOOTER ===== -->
+            <div class="footer-love">
+                <div class="footer-text">
+                    A story for you, if you want to read  <span class="btn-icon"><button class="click-btn" id="popupTrigger">
+                    <span class="btn-icon"></span> Click here
+                </button></span>
+                </div>
+                <!-- <button class="click-btn" id="popupTrigger">
+                    <span class="btn-icon">📖</span> Click here
+                </button> -->
+            </div>
+
+            <br><br><br><br><br><br>
+
             <!-- CHOOSE ONE -->
             <div class="choose-label">Choose One</div>
             <p class="sub-label">Pick one, and let luck decide which message goes to "M"</p>
@@ -1161,18 +1173,6 @@
             <!-- BOTTOM extra wish -->
             <div class="extra-wish-container">
                 <div id="extraWishText" class="extra-wish-text"></div>
-            </div>
-
-            <!-- ===== NEW FOOTER ===== -->
-            <div class="footer-love">
-                <div class="footer-text">
-                    Some words from me if you want to read  <span class="btn-icon"><button class="click-btn" id="popupTrigger">
-                    <span class="btn-icon"></span> Click here
-                </button></span>
-                </div>
-                <!-- <button class="click-btn" id="popupTrigger">
-                    <span class="btn-icon">📖</span> Click here
-                </button> -->
             </div>
         </div>
     </div>
@@ -1199,7 +1199,6 @@
                     src="storyline.pdf"
                     allow="autoplay"
                     onload="document.getElementById('pdfLoading').classList.add('hidden')"
-                    onerror="document.getElementById('pdfLoading').innerHTML = '<div class=\\'emoji\\'>❌</div><span>Could not load PDF. Please make sure the file exists.</span>'"
                 ></iframe>
             </div>
 
@@ -1226,10 +1225,10 @@
             const wishButtons = document.querySelectorAll('.btn-wish-option');
 
             const wishMessages = [
-                { text: ' "You can keep dreaming."' },
-                { text: ' "Stop dreaming.."' },
-                { text: ' "Make it real."' },
-                { text: ' "I don\'t know yet."' }
+                { text: ' "You can keep dreaming..."' },
+                { text: ' "Stop dreaming..."' },
+                { text: ' "Make it real..."' },
+                { text: ' "Maybe there\'s hope for you..."' }
             ];
 
             let selectedIndex = -1;
